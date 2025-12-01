@@ -1,21 +1,3 @@
-// {
-//   _id: ObjectId,
-//   assignment: ObjectId (ref: 'Assignment', indexed),
-//   student: ObjectId (ref: 'User', indexed),
-//   course: ObjectId (ref: 'Course'),
-//   submissionType: Enum ['text', 'link'],
-//   content: String,                 // Text answer or Google Drive link
-//   submittedAt: Date,
-//   score: Number,
-//   feedback: String,
-//   reviewedBy: ObjectId (ref: 'User'),
-//   reviewedAt: Date,
-//   status: Enum ['pending', 'reviewed', 'resubmit']
-// }
-
-// // Compound Index
-// Index: { assignment: 1, student: 1 } (unique)
-
 
 const mongoose = require('mongoose');
 
